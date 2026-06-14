@@ -196,19 +196,9 @@
 <style>
 /* --- Mobile Layout Fixes (Does not affect laptop view) --- */
 @media (max-width: 768px) {
-    /* Targets the footer row container and forces elements to stack up cleanly on a phone */
-    .mt-20.flex.flex-row.items-end.w-full.relative {
-        flex-direction: column !important;
-        align-items: center !important;
-        gap: 40px !important; /* Creates perfect separation between QR code and social media icons */
-    }
-
-    /* Unlocks the social icons from their forced laptop position so they fit perfectly underneath on mobile */
-    .absolute.left-1/2.-translate-x-1/2 {
-        position: relative !important;
-        left: auto !important;
-        transform: none !important;
-        padding-bottom: 0 !important;
+    /* Targets your exact QR card box using its proper name to give it vertical space */
+    .glass-card {
+        margin-bottom: 95px !important; /* Pushes the social icons safely down below the card */
     }
 }
 </style>
