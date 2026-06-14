@@ -192,3 +192,17 @@
     </div>
 </body>
 </html>
+
+<style>
+/* --- Mobile Layout Fixes (Does not affect laptop view) --- */
+@media (max-width: 768px) {
+    /* Fixes the QR code box overlapping the social icons */
+    .qr-card {
+        height: auto !important;
+        padding-bottom: 25px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+}
+</style>
