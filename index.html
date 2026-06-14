@@ -196,13 +196,19 @@
 <style>
 /* --- Mobile Layout Fixes (Does not affect laptop view) --- */
 @media (max-width: 768px) {
-    /* Prevents the QR code card from overlapping the footer content below it */
-    .qr-card {
-        height: auto !important;
-        padding-bottom: 35px !important;
-        display: flex !important;
+    /* Targets the footer row container and forces elements to stack up cleanly on a phone */
+    .mt-20.flex.flex-row.items-end.w-full.relative {
         flex-direction: column !important;
         align-items: center !important;
+        gap: 40px !important; /* Creates perfect separation between QR code and social media icons */
+    }
+
+    /* Unlocks the social icons from their forced laptop position so they fit perfectly underneath on mobile */
+    .absolute.left-1/2.-translate-x-1/2 {
+        position: relative !important;
+        left: auto !important;
+        transform: none !important;
+        padding-bottom: 0 !important;
     }
 }
 </style>
