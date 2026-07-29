@@ -44,14 +44,12 @@
             transform: scale(1.1);
         }
 
-        /* Large QR code styling inside the dedicated box */
         #qrcode img {
             border: 8px solid white;
             border-radius: 12px;
             display: inline-block;
         }
 
-        /* Custom scrollbar */
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #0f172a; }
         ::-webkit-scrollbar-thumb { background: #334155; border-radius: 10px; }
@@ -60,15 +58,14 @@
 <body class="min-h-screen flex flex-col items-center py-12 px-6">
 
     <div class="max-w-4xl w-full">
+        
         <!-- TOP HALF: Bio & Summary Section -->
         <section class="grid md:grid-cols-12 gap-8 items-start mb-16">
             <div class="md:col-span-4 flex flex-col items-center">
                 <div class="relative group w-64">
                     <div class="absolute -inset-1 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
-                    <!-- Portrait image updated with seamless full-frame class configurations -->
-                    <img src="Top HeadPhoto.jpg" alt="Professional Portrait" class="relative w-full aspect-[4/5] object-cover object-top rounded-2xl">
+                    <img src="Top HeadPhoto.jpg" alt="Professional Portrait" class="relative w-full aspect-[4/5] object-cover object-top rounded-2xl" onerror="this.src='https://placehold.co/400x500/1e293b/10b981?text=Soraya+Mendoza'">
                 </div>
-                <!-- Centered Name and New Title underneath the portrait container -->
                 <h2 class="text-white text-xl font-bold mt-4">Soraya Mendoza</h2>
                 <p class="text-emerald-400 text-sm font-medium">Wealth & Real Estate Guide</p>
             </div>
@@ -88,7 +85,6 @@
             </div>
         </section>
 
-        <!-- MIDDLE SECTION: Interactive Widgets -->
         <h2 class="text-2xl font-bold text-white serif-font mb-8 flex items-center">
             <span class="w-12 h-[1px] bg-slate-700 mr-4"></span>
             Services & Access
@@ -127,16 +123,13 @@
             </a>
         </div>
 
-        <!-- SECTION: Education, Strategy, and Protection for Your Future -->
         <section class="my-16 text-center">
-            <!-- Visual Section Break using the exact style as 'Services & Access' head -->
             <div class="text-2xl font-bold text-white serif-font mb-8 flex items-center justify-center">
                 <span class="w-12 h-[1px] bg-slate-700 mr-4"></span>
                 Insights & Tools
                 <span class="w-12 h-[1px] bg-slate-700 ml-4"></span>
             </div>
 
-            <!-- Heading & Sub-headline elements -->
             <h2 class="text-3xl md:text-4xl font-bold text-white serif-font mb-4 tracking-tight max-w-3xl mx-auto whitespace-nowrap">
                 Education, Strategy, and Protection for Your Future.
             </h2>
@@ -144,29 +137,87 @@
                 Explore my resources and tools designed to help you build your future.
             </p>
 
-            <!-- Pill-Shaped Rounded Buttons stacked vertically -->
             <div class="flex flex-col gap-4 items-center">
-                <!-- Button 1 (Emerald #10b981 matched) -->
                 <a href="https://theassetvault.github.io/Empowered-Buyer/" target="_blank" class="w-72 px-8 py-3.5 bg-[#10b981] hover:bg-[#0da271] text-slate-950 font-bold rounded-full transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg hover:shadow-emerald-500/20 text-sm tracking-wider uppercase text-center block">
-                    Real Estate Guide &rarr;
+                    Real Estate Simplified &rarr;
                 </a>
-                <!-- Button 2 (Purple #a855f7 matched) -->
                 <a href="https://theassetvault.github.io/LifeInsuranceBasics/" target="_blank" class="w-72 px-8 py-3.5 bg-[#a855f7] hover:bg-[#9333ea] text-white font-bold rounded-full transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg hover:shadow-purple-500/20 text-sm tracking-wider uppercase text-center block">
-                    Life Insurance Basics &rarr;
+                    Life Insurance Insights &rarr;
+                </a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUo7NVzCnNy0oSnaZ0zQ_KXQzLl47yGH5d5411qtPLkyci6w/viewform?usp=sharing&ouid=115542340744585826524" target="_blank" class="w-72 px-8 py-3.5 bg-[#10b981] hover:bg-[#0da271] text-slate-950 font-bold rounded-full transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg hover:shadow-emerald-500/20 text-sm tracking-wider uppercase text-center block">
+                    What’s My Home Worth? &rarr;
+                </a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfsABxuVrbMVXqzycb96WyVjZUWdf-oXp57oGRPznQwji2-Jg/viewform?usp=sharing&ouid=115542340744585826524" target="_blank" class="w-72 px-8 py-3.5 bg-[#a855f7] hover:bg-[#9333ea] text-white font-bold rounded-full transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg hover:shadow-purple-500/20 text-sm tracking-wider uppercase text-center block">
+                    Buyer Property Needs &rarr;
+                </a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdF6TzeJ9VMWBRp3VtOTxKjI-cBbNKM5NIMROJ_xx3fdmJAlA/viewform?usp=sharing&ouid=115542340744585826524" target="_blank" class="w-72 px-8 py-3.5 bg-[#10b981] hover:bg-[#0da271] text-slate-950 font-bold rounded-full transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg hover:shadow-emerald-500/20 text-sm tracking-wider uppercase text-center block">
+                    Insurance Coverage Needs &rarr;
                 </a>
             </div>
         </section>
 
+        <!-- SECTION: As Featured In & Media Highlights (3-Column Layout) -->
+        <section class="my-20">
+            <div class="text-2xl font-bold text-white serif-font mb-10 flex items-center justify-center text-center">
+                <span class="w-12 h-[1px] bg-slate-700 mr-4"></span>
+                As Featured In & Media Highlights
+                <span class="w-12 h-[1px] bg-slate-700 ml-4"></span>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                
+                <!-- Block 1: Best-Selling Book -->
+                <div class="glass-card p-6 rounded-3xl flex flex-col justify-between text-center">
+                    <div>
+                        <div class="flex justify-center gap-3 mb-4">
+                            <img src="Book Cover.jpg" alt="Why Financial Services Volume 3 Front Cover" class="w-28 h-auto object-cover rounded-xl border border-slate-700 shadow-md" onerror="this.src='https://placehold.co/110x160/1e293b/10b981?text=Book+Front'">
+                            <img src="Book Back.jpg" alt="Why Financial Services Volume 3 Back Cover" class="w-28 h-auto object-cover rounded-xl border border-slate-700 shadow-md" onerror="this.src='https://placehold.co/110x160/1e293b/10b981?text=Book+Back'">
+                        </div>
+                        <h3 class="font-bold text-white mb-2">#1 Best-Seller</h3>
+                        <p class="text-xs text-slate-300 mb-6">Co-author of the #1 best seller on Amazon: Why Financial Services Volume 3.</p>
+                    </div>
+                    <a href="https://www.amazon.com/Why-Financial-Services-Inside-Journeys/dp/B0H7PG7C8Z/ref=sr_1_1?crid=BWKH4P778FQK&dib=eyJ2IjoiMSJ9.MvQQ-bvY0WArsojXo4uo3IHH7Zok4FcP1R2N9QukWyrJFSAIUJHYBsUZR4pVUDjJgGRH7lRUAAUlNvSiaq7jU3LnGY_EAC-uPQQB8brtWvRHhle1B3dyVumr6G4EznSTrAsQOWrRn-2SYlSuiTSv1IM-jhZonSBLzGeKl1VuA-EBuQyQUjJ-zZP7_ipBuN2A.zAwrIcvy9h6OohafaKBUy7eDbFjhXYwy150ENBxOvT0&dib_tag=se&keywords=why+financial+services+vol+3&qid=1784648713&sprefix=why+financia%2Caps%2C146&sr=8-1" target="_blank" class="w-full py-3 bg-[#10b981] hover:bg-[#0da271] text-slate-950 font-bold rounded-xl transition-all duration-300 text-xs tracking-wider uppercase block shadow-md">
+                        Get It on Amazon &rarr;
+                    </a>
+                </div>
+
+                <!-- Block 2: Times Square Feature -->
+                <div class="glass-card p-6 rounded-3xl flex flex-col justify-between text-center">
+                    <div>
+                        <div class="mb-4">
+                            <img src="Times Square.jpg" alt="Times Square Feature" class="w-full h-44 object-cover rounded-xl border border-slate-700 shadow-md" onerror="this.src='https://placehold.co/300x180/1e293b/10b981?text=Times+Square'">
+                        </div>
+                        <h3 class="font-bold text-white mb-2">Times Square Spotlight</h3>
+                        <p class="text-xs text-slate-300 mb-6">So elated to be featured in Times Square!</p>
+                    </div>
+                    <a href="https://www.facebook.com/reel/3897586723869523" target="_blank" class="w-full py-3 bg-slate-800/80 hover:bg-slate-700 text-emerald-400 font-semibold rounded-xl text-xs tracking-wider uppercase block border border-slate-700 transition-all">
+                        Public Campaign Spotlight &rarr;
+                    </a>
+                </div>
+
+                <!-- Block 3: Yahoo Finance Article -->
+                <div class="glass-card p-6 rounded-3xl flex flex-col justify-between text-center">
+                    <div>
+                        <img src="Yahoo Article.jpg" alt="Yahoo Finance article excerpt featuring Soraya Mendoza" class="w-full h-44 object-cover object-top rounded-xl mb-4 border border-purple-500/20 shadow-inner">
+                        <h3 class="font-bold text-white mb-2">Yahoo Finance Coverage</h3>
+                        <p class="text-xs text-slate-300 mb-6">Proud to stand alongside industry leaders—check out our feature on Yahoo!</p>
+                    </div>
+                    <a href="https://finance.yahoo.com/small-business/articles/sean-youngs-team-legacy-featured-180000494.html" target="_blank" class="w-full py-3 bg-[#a855f7] hover:bg-[#9333ea] text-white font-bold rounded-xl transition-all duration-300 text-xs tracking-wider uppercase block shadow-md">
+                        Read Article &rarr;
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
         <!-- FOOTER AREA: QR and Socials -->
-        <div class="mt-20 flex flex-row items-end w-full relative">
             
             <!-- QR CODE BOX (FAR LEFT) -->
             <div class="flex flex-col items-start space-y-4">
                 <p class="text-slate-500 text-[10px] font-bold tracking-[0.3em] uppercase">Scan me and save my info</p>
                 <div class="glass-card p-6 rounded-3xl inline-flex flex-col items-center border-emerald-500/20 shadow-lg">
-                    <!-- Dynamic qrcode container replaced with uploaded Home&Life QRCode.png image -->
                     <div id="qrcode" class="w-[140px] h-[140px] flex items-center justify-center">
-                        <img src="Home&Life QRCode.png" alt="QR Code" class="w-full h-full object-contain rounded-xl bg-white border-4 border-white">
+                        <img src="Home&Life QRCode.png" alt="QR Code" class="w-full h-full object-contain rounded-xl bg-white border-4 border-white" onerror="this.src='https://placehold.co/140x140/ffffff/1e293b?text=QR+Code'">
                     </div>
                     <p class="text-[10px] text-emerald-500/60 mt-4 font-mono tracking-widest uppercase">Digital E-card</p>
                 </div>
@@ -174,7 +225,6 @@
 
             <!-- SOCIAL ICONS (CENTERED) -->
             <div class="absolute left-1/2 -translate-x-1/2 flex flex-col items-center space-y-6 pb-6">
-                <!-- Connect Globally label changed to FOLLOW ME -->
                 <h3 class="text-slate-500 text-[10px] font-bold tracking-[0.3em] uppercase">FOLLOW ME</h3>
                 <div class="flex items-center space-x-6">
                     <a href="https://www.facebook.com/people/Soraya-Mendoza/100085378370968/" target="_blank" class="social-icon" aria-label="Facebook">
@@ -192,13 +242,3 @@
     </div>
 </body>
 </html>
-
-<style>
-/* --- Mobile Layout Fixes (Does not affect laptop view) --- */
-@media (max-width: 768px) {
-    /* Targets your exact QR card box using its proper name to give it vertical space */
-    .glass-card {
-        margin-bottom: 95px !important; /* Pushes the social icons safely down below the card */
-    }
-}
-</style>
